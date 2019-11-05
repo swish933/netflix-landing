@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+
+li {
+    list-style-type: none;
+}
+
+.deviceImg img{
+    height: 50px;
+}
+
+.deviceCard {
+    font-family: 'Arimo', sans-serif;
+    width: Calc(100%/7);
+    height: 160px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.deviceCard .deviceName {
+    font-size: 0.7em;
+    
+}
+
+
+.deviceName{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    
+}
+
+
