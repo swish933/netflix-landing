@@ -1,0 +1,13 @@
+.description-section {
+    display : flex;
+    flex-direction:row;
+    height: 60vh;
+    background-image: url(https://d1qmdf3vop2l07.cloudfront.net/radioactive-shoelace.cloudvent.net/compressed/_min_/efbc3eac19a10b943d5360eb7825c08f.jpg)
+    
+}
+
+.description-text{
+    margin-top: 50px;
+    margin-left: 100px;
+    color: whitesmoke;
+}

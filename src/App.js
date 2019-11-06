@@ -1,16 +1,15 @@
 import React from 'react';
-import DeviceList from './DeviceList';
-// import Description from './Description';
+import DeviceSection from './DeviceSection';
 import {device} from './data/deviceData';
 import './styles/App.css';
 
 
 class App extends React.Component{
+
   render () {
     return (
       <div className='app'>
-        <DeviceList device={device} />
-        {/* <Description /> */}
+        <DeviceSection device={device} />
       </div>
      
     )
