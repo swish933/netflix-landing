@@ -14,11 +14,6 @@ class DeviceSection extends React.Component {
         this.updateActiveItem = this.updateActiveItem.bind(this);
         
     }
-
-    // componentWillMount() {
-    //     this.setState({activeIndex: 1})
-    // }
-
     
     updateActiveItem = (id) => {
         this.setState(
