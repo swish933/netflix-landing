@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300&display=swap');
+
 .description-section {
     display : flex;
     flex-direction:row;
@@ -5,9 +7,25 @@
     background-image: url(https://d1qmdf3vop2l07.cloudfront.net/radioactive-shoelace.cloudvent.net/compressed/_min_/efbc3eac19a10b943d5360eb7825c08f.jpg)
     
 }
+.descriptions {
+    font-family: Poppins, sans-serif;
+    width: 580px;
+}
 
 .description-text{
     margin-top: 50px;
     margin-left: 100px;
     color: whitesmoke;
 }
+
+.description-text h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    border-left: 2px solid #e50914;
+    padding-left: 20px;
+}
+
+.description-text p {
+    font-size: 13px;
+}
+

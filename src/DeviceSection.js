@@ -8,9 +8,16 @@ import './styles/DeviceList.css';
 class DeviceSection extends React.Component {
     constructor(props){
         super(props);
-        this.state = {activeIndex: 1};
+        this.state = {
+            activeIndex : 1
+        }
         this.updateActiveItem = this.updateActiveItem.bind(this);
+        
     }
+
+    // componentWillMount() {
+    //     this.setState({activeIndex: 1})
+    // }
 
     
     updateActiveItem = (id) => {
@@ -32,7 +39,7 @@ class DeviceSection extends React.Component {
                     <Device onDeviceClick={this.updateActiveItem} key={6} activeIndex={this.state.activeIndex} id={this.props.device[6].id} img={this.props.device[6].img} name={this.props.device[6].name} />
                 </div>
                 <Divider />
-                <Description device={device} id={this.state.activeIndex - 1}/>
+                <Description device={device} id={this.state.activeIndex}/>
             </div>
         )
     }
