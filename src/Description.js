@@ -8,8 +8,8 @@ class Description extends Component {
             <section className='description-section'>
                 <div className='descriptions'>
                     <div className='description-text' >
-                        <h3>{this.props.device[1].text}</h3>
-                        <p>{this.props.device[1].subtext}</p>
+                        <h3>{this.props.device[this.props.id].text}</h3>
+                        <p>{this.props.device[this.props.id].subtext}</p>
                     </div>
                     <div>
                         

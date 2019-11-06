@@ -12,6 +12,7 @@ class DeviceSection extends React.Component {
         this.updateActiveItem = this.updateActiveItem.bind(this);
     }
 
+    
     updateActiveItem = (id) => {
         this.setState(
             {activeIndex: id}
@@ -31,7 +32,7 @@ class DeviceSection extends React.Component {
                     <Device onDeviceClick={this.updateActiveItem} key={6} activeIndex={this.state.activeIndex} id={this.props.device[6].id} img={this.props.device[6].img} name={this.props.device[6].name} />
                 </div>
                 <Divider />
-                <Description device={device} activeIndex={this.state.activeIndex}/>
+                <Description device={device} id={this.state.activeIndex - 1}/>
             </div>
         )
     }

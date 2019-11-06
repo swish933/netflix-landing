@@ -15,7 +15,7 @@ class Device extends React.Component {
         let activeIndex = this.props.activeIndex;
         let deviceIndex = this.props.id;
         return (
-                <div className= {activeIndex === deviceIndex ? 'deviceCard-active':'deviceCard'} onClick={this.handleClick.bind(this.deviceIndex)} >
+                <div className= {activeIndex === this.props.id ? 'deviceCard-active':'deviceCard'} onClick={this.handleClick.bind(this.deviceIndex)} >
                     <div className='deviceImg pa1'>
                         <img src={this.props.img} alt='deviceImg'/>
                     </div>
