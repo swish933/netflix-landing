@@ -30,7 +30,7 @@ const Header = () => {
                             <source src="https://res.cloudinary.com/yungdenzel/video/upload/v1572699511/youtube_nnmhsd.mp4" type="video/mp4" />
             />            
             </video>   
-                        <h1 className="text-white mar"> Connect to Netflix<br></br> using your favourite<br></br>devices</h1>          
+                        <h1 className="text-white mar"> Connect to Netflix using <br></br>your favourite<br></br>devices</h1>          
         </div>
            </section>
            
