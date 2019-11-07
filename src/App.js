@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header'
-import './App.css';
+import './styles/App.css';
 import DeviceSection from './DeviceSection';
 import {device} from './data/deviceData';
 import './styles/App.css';
