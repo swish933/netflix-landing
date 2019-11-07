@@ -14,10 +14,14 @@ class Device extends React.Component {
     render() {
         let activeIndex = this.props.activeIndex;
         let deviceIndex = this.props.id;
+        let img = this.props.img;
+        if (activeIndex == deviceIndex) {
+            img = this.props.activeimg;
+        }
         return (
-                <div className= {(activeIndex === deviceIndex) ? 'deviceCard-active':'deviceCard'} onClick={this.handleClick.bind(this.deviceIndex)} >
+                <div className= {(activeIndex == deviceIndex) ? 'deviceCard-active':'deviceCard'} onClick={this.handleClick.bind(this, this.deviceIndex)} >
                     <div className='deviceImg pa1'>
-                        <img src={this.props.img} alt='deviceImg'/>
+                        <img src={img} alt='deviceImg'/>
                     </div>
                     <div className='deviceName'>
                         <p>{this.props.name}</p>

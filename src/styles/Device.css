@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
 
+
 .deviceCard, .deviceCard-active{
     background-color: white;
     font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
-    width: Calc(100%/7);
+    width: 200px;
     height: 160px;
     padding-top: 15px;
     border-left: 1px solid #eee;
@@ -15,6 +16,7 @@
 
 .deviceCard-active {
     z-index: 1000;
+    
 }
 
 .deviceImg img{
@@ -33,6 +35,18 @@
     top:140px;
     position: absolute;
     
+}
+
+@media(min-width:800px) {
+    .deviceCard, .deviceCard-active {
+        width: 200px
+    }
+}
+
+@media(max-width:650px){
+    .deviceCard, .deviceCard-active {
+        min-width: 100px;
+    }
 }
 
 
