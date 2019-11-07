@@ -53,5 +53,12 @@ a{   font-family: "Netflix Sans", HelveticaNeue,"Helvetica Neue", Helvetica, Ari
        z-index:1;    
       left: 30%; 
         font-weight: bold; 
-        font-size: 50px;   
+          
     }
+
+
+
+ 
+ @media(max-width:800px) {
+     background: #222 center no-repeat;
+ }g
