@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import Device from './Device'
 import './styles/Description.css';
 
 class Description extends Component {

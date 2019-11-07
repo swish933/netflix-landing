@@ -14,11 +14,6 @@ class DeviceSection extends React.Component {
         this.updateActiveItem = this.updateActiveItem.bind(this);
         
     }
-
-    // componentWillMount() {
-    //     this.setState({activeIndex: 1})
-    // }
-
     
     updateActiveItem = (id) => {
         this.setState(
@@ -29,7 +24,7 @@ class DeviceSection extends React.Component {
     render() {
         return (
             <div>
-                <div className='devices tc'> 
+                {/* <div className='devices tc'> 
                     <Device onDeviceClick={this.updateActiveItem} key={0} activeIndex={this.state.activeIndex} id={this.props.device[0].id} img={this.props.device[0].img} name={this.props.device[0].name} />
                     <Device onDeviceClick={this.updateActiveItem} key={1} activeIndex={this.state.activeIndex} id={this.props.device[1].id} img={this.props.device[1].img} name={this.props.device[1].name} />
                     <Device onDeviceClick={this.updateActiveItem} key={2} activeIndex={this.state.activeIndex} id={this.props.device[2].id} img={this.props.device[2].img} name={this.props.device[2].name} />
@@ -37,6 +32,13 @@ class DeviceSection extends React.Component {
                     <Device onDeviceClick={this.updateActiveItem} key={4} activeIndex={this.state.activeIndex} id={this.props.device[4].id} img={this.props.device[4].img} name={this.props.device[4].name} />
                     <Device onDeviceClick={this.updateActiveItem} key={5} activeIndex={this.state.activeIndex} id={this.props.device[5].id} img={this.props.device[5].img} name={this.props.device[5].name} />
                     <Device onDeviceClick={this.updateActiveItem} key={6} activeIndex={this.state.activeIndex} id={this.props.device[6].id} img={this.props.device[6].img} name={this.props.device[6].name} />
+                </div> */}
+                <div className='devices tc'> 
+                    {
+                        this.props.device.map((device, i) => {
+                            return <Device onDeviceClick={this.updateActiveItem} key={i} activeIndex={this.state.activeIndex} id={this.props.device[i].id} img={this.props.device[i].img} activeimg={this.props.device[i].activeimg} name={this.props.device[i].name} />
+                        })
+                    }
                 </div>
                 <Divider />
                 <Description device={device} id={this.state.activeIndex}/>

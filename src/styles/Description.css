@@ -3,7 +3,7 @@
 .description-section {
     display : flex;
     flex-direction:row;
-    height: 60vh;
+    height: 55vh;
     background-image: url(https://d1qmdf3vop2l07.cloudfront.net/radioactive-shoelace.cloudvent.net/compressed/_min_/efbc3eac19a10b943d5360eb7825c08f.jpg)
     
 }
@@ -19,13 +19,54 @@
 }
 
 .description-text h3 {
-    font-size: 40px;
+    font-size: 37px;
     text-transform: uppercase;
     border-left: 2px solid #e50914;
-    padding-left: 20px;
+    padding-left: 27px;
 }
 
 .description-text p {
+    padding-top: 0px;
     font-size: 13px;
+    line-height: 1.5;
+}
+
+@media(max-width:800px) {
+    .description-text {
+        margin-left: 62px;
+    }
+}
+
+@media(max-width:750px) {
+    .description-text h3 {
+        font-size: 32px;
+        padding-left: 15px;
+        margin-left: -5px;
+
+    }
+}
+
+@media(max-width:600px) {
+    .description-text {
+        margin-left: 20px;
+    }
+    .description-text h3 {
+        font-size: 29px;
+        padding-left: 10px;
+
+    }
+
+    .description-text p {
+        font-size: 11px;
+        line-height: 1;
+    }
+
+}
+
+@media(max-width:500px) {
+    .description-text {
+        margin-left: 22px;
+    }
+
 }
 
