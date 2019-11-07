@@ -1,0 +1,53 @@
+.netflix {
+    font-size: 200%;
+    color: #e50914;
+    font-weight: bold;
+    padding-left: 10%;
+    top: 0;
+    bottom: 0;
+}
+.collapse{
+            float: right;
+            }
+
+a{   font-family: "Netflix Sans", HelveticaNeue,"Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: bold;
+     color: #e50914;
+     font-size: 90%;
+}
+
+.red {
+        background: #e50914;
+        border: 1px;
+        color: white;
+        
+    }
+
+.collapse {
+        padding-right: 9%;
+    }
+
+.video {
+    position: relative;
+    background-image: url(https://d1qmdf3vop2l07.cloudfront.net/radioactive-shoelace.cloudvent.net/compressed/_min_/a1121b6d12607506c80dc9b79dab72d8.jpg);
+    text-align: center;
+    background: #222 center no-repeat;
+    background-size: cover;
+}
+
+  video {
+     top: 0;
+     z-index: 0;
+     position: relative;
+       /* optional depending on what you want to do in your app */
+   }
+
+  
+
+   .mar {
+       top: 0;
+       left: 35%;
+       position: absolute;
+       z-index:1;    
+       padding-top: 5%;  
+          }
