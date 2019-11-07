@@ -1,0 +1,47 @@
+.vertical{ 
+        border-right: 2px solid gray; 
+        height: 20px; 
+        position: relative; 
+        color: black;
+}
+ul>li{
+    display: inline;
+
+}
+div>ul>li>a{
+    color: black;
+    padding: 8px;
+    
+}
+.flag{
+    display: inline-flex;
+    margin: auto;
+    float: right;
+    weight:30px;
+    src: url("flag_files/flag.png");
+    height: 30px;
+
+}
+#net1{
+    text-align: center;
+    padding-top: 50px;
+}
+#net2{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.foot{
+    position: relative; 
+    color: black;
+}
+p>a{
+    
+    color: black;
+    padding: 0px 8px 0px 8px;
+}
+a:hover{
+    color: gray;
+}
+.row{
+    padding-bottom: 40px;
+}
