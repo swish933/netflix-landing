@@ -1,5 +1,5 @@
 .netflix {
-    font-size: 200%;
+    font-size: 7vh;
     color: #e50914;
     font-weight: bold;
     padding-left: 10%;
@@ -9,8 +9,8 @@
 }
 
 .collapse{
-            float: right;
-            }
+  float: right;
+}
 
 a{   font-family: "Netflix Sans", HelveticaNeue,"Helvetica Neue", Helvetica, Arial, sans-serif;
      font-weight: bold;
@@ -19,43 +19,64 @@ a{   font-family: "Netflix Sans", HelveticaNeue,"Helvetica Neue", Helvetica, Ari
 }
 
 .red {
-        background: #e50914;
-        border: 1px;
-        color: white;
-        
-    }
+  background: #e50914;
+  border: 1px;
+  color: white;
 
-.collapse {
-        padding-right: 9%;
-    }
-
-.video {
-    position: relative;
-    background-image: url(https://d1qmdf3vop2l07.cloudfront.net/radioactive-shoelace.cloudvent.net/compressed/_min_/a1121b6d12607506c80dc9b79dab72d8.jpg);
-    text-align: center;
-    background: #222 center no-repeat;
-    background-size: cover;
 }
 
-  video {
-     top: 0;
-     z-index: 0;
-     position: relative;
-     
-       /* optional depending on what you want to do in your app */
-   }
+.collapse {
+  padding-right: 9%;
+}
+
+.video {
+  position: relative;
+  background-image: url(https://d1qmdf3vop2l07.cloudfront.net/radioactive-shoelace.cloudvent.net/compressed/_min_/a1121b6d12607506c80dc9b79dab72d8.jpg);
+  text-align: center;
+  background: #222 center no-repeat;
+  background-size: cover;
+}
+
+video {
+  top: 0;
+  z-index: 0;
+  position: relative;
+
+/* optional depending on what you want to do in your app */
+}
+
+
+.mar {
+  top: 0;
+  position: absolute;
+  z-index:1;    
+  left: 30%;
+  font-weight: bold; 
+  font-size: 7vh;    
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .netflix {
+    font-size: 5vh;
+   margin: 0;
+   padding-left: 0%;
+  }
+
+  .collapse{
+padding-right: 0% !important;
+  }
   
+  .navbar{
+    flex-wrap: nowrap !important;
+  }
+  
+  .video {
+    position: relative;
+    background-image: url(https://d1qmdf3vop2l07.cloudfront.net/radioactive-shoelace.cloudvent.net/compressed/_min_/a1121b6d12607506c80dc9b79dab72d8.jpg) !important;
+    width: 100%
+    
+  }
 
-   .mar {
-       top: 0;
-      
-       position: absolute;
-       z-index:1;    
-      left: 30%;
-        font-weight: bold; 
-      font-size: 50px;    
-    }
-
-
-
- 
+}

@@ -10,19 +10,19 @@ const Header = () => {
              <div className="container-fluid">
              <section className="header">
             <nav className="navbar navbar-expand-lg  bg-white">
-                <a className="navbar-brand netflix" href="/">NETFLIX</a>
-                
-                <div className="collapse navbar-collapse d-flex justify-content-end " id="navbarTogglerDemo02">
-                    <ul className="navbar-nav  ">
+               <a className="navbar-brand netflix" href="/">NETFLIX</a>
+               
+                <div className="collapse navbar-collapse d-flex justify-content-end">
+                                      <ul>
                          <li className="nav-item active">
-                            <a className="nav-link" href="/">Sign In</a>
+                            <a  href="/">Sign In</a>
                          </li>
                         <li className="nav-item ">
-                             <a className="nav-link red" href="/">Sign Up</a>
+                             <a className="red" href="/">Sign Up</a>
                         </li>                        
                     </ul>
-                   
-                     </div>
+                   </div>
+                    
                      </nav>
                 </section>
                 <section className="video ">
