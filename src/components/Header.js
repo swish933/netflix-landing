@@ -1,45 +1,45 @@
 import React from 'react';
-import './Header.css'
+import { Navbar, Nav} from "react-bootstrap";
 
-const Header = () => {
+const mystyle = { backgroundColor: "#fff",  width: "100%"};
+ 
+const cstyle = {  color: "#e50914"};
 
+const Header = () => (
+  <div>
+    <div className="w-100 fixed  z-1 HelveticaNeue">
+      <Navbar style={mystyle} expand="lg">
+        <Navbar.Brand
+          className="helvetica pl6-l f2-l f4-m f4-ns flex-inline fw7"
+          style={cstyle}
+          href="#home">    NETFLIX
+        </Navbar.Brand>
+        <Nav className="mr-auto fr "></Nav>
+        <Nav pullRight className="mr5-l mr2-l tr-ns  flex">
+          <ul>
+            <li
+              className="f6-l f7 link ph3  b pv2 mb2 fw7 helvetica pointer dib white ma2-l"
+              href="#"
+              style={cstyle}
+            >
+              
+              Sign In
+            </li>
+            <li
+              className="f6-l f7 link ph3 pv2  br2 helvetica pointer fw7 dib white tc ma2-l"
+              style={{ backgroundColor: "#e50914" }}
+              href="#"
+            >
+              {" "}
+              Sign Up
+            </li>
+          </ul>
+        </Nav>
+      </Navbar>
+    </div>
+  </div>
+);
     
-        return  (
-
-         <div>
-             <div className="container-fluid">
-             <section className="header">
-            <nav className="navbar navbar-expand-lg  bg-white">
-               <a className="navbar-brand netflix" href="/">NETFLIX</a>
-               
-                <div className="collapse navbar-collapse d-flex justify-content-end">
-                                      <ul>
-                         <li className="nav-item active">
-                            <a  href="/">Sign In</a>
-                         </li>
-                        <li className="nav-item ">
-                             <a className="red" href="/">Sign Up</a>
-                        </li>                        
-                    </ul>
-                   </div>
-                    
-                     </nav>
-                </section>
-                <section className="video ">
-        <div>                                            	
-            <video id="background-video " loop autoPlay>
-                            <source src="https://res.cloudinary.com/yungdenzel/video/upload/v1572699511/youtube_nnmhsd.mp4" type="video/mp4" />
-            />            
-            </video>   
-                        <h1 className="text-white text-center col-xs-8 mar"> Connect to Netflix using <br></br>your favourite devices</h1>          
-        </div>
-           </section>
-           
-            </div>
-         </div>
-
-    )
-    }
 
 
 
