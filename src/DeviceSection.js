@@ -23,7 +23,7 @@ class DeviceSection extends React.Component {
 
     render() {
         return (
-            <div>
+            < div className = "z-1">
                 {/* <div className='devices tc'> 
                     <Device onDeviceClick={this.updateActiveItem} key={0} activeIndex={this.state.activeIndex} id={this.props.device[0].id} img={this.props.device[0].img} name={this.props.device[0].name} />
                     <Device onDeviceClick={this.updateActiveItem} key={1} activeIndex={this.state.activeIndex} id={this.props.device[1].id} img={this.props.device[1].img} name={this.props.device[1].name} />
