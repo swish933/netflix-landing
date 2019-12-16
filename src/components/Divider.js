@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Device.css";
 
-export const Divider = () => (
-  <div className="divider"></div>
-);
+const Divider = () => <div className="divider"></div>;
+
+export default Divider;
