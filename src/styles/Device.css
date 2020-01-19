@@ -7,16 +7,16 @@
     font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 160px;
+    justify-content: space-around;
+    width:100%;
+    height: 15vh;
     padding-top: 15px;
     border-left: 1px solid #eee;
     
 }
 
-.deviceCard-active {
-    z-index: 1000;
-    
+.deviceName, .deviceImg img{
+    margin: 0px 5px;
 }
 
 .deviceImg img{
@@ -31,22 +31,32 @@
 .divider {
     background-color: #e50914;
     width: 100%;
-    height: 20px;
-    top: 466px;
-    position: absolute;
-    
+    height: 2.5vh;
 }
 
 @media(min-width:800px) {
-    .deviceCard, .deviceCard-active {
+    .option{
         width: 200px
     }
 }
 
-@media(max-width:650px){
-    .deviceCard, .deviceCard-active {
+@media(max-width:800px){
+    .deviceName {
+        font-size: 0.7em; 
+     
+    }
+
+    .option,.deviceCard,.deviceCard-active{
         min-width: 100px;
     }
+}
+
+@media(max-width:600px){
+   
+    .deviceImg img {
+        height: 42px;
+    }
+
 }
 
 

@@ -1,0 +1,21 @@
+.Container {
+    position: relative;
+    width:100%;
+    height: auto;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+.Video {
+    width: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.Content {
+    position: absolute;
+    bottom: 16px;
+    color: white;
+    width: 100%;    
+}
+
+
+
